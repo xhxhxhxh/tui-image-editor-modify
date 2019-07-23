@@ -1,0 +1,114 @@
+{
+  "_args": [
+    [
+      "tui-image-editor@3.5.2",
+      "F:\\Mywork code\\9man-web-pc"
+    ]
+  ],
+  "_from": "tui-image-editor@3.5.2",
+  "_id": "tui-image-editor@3.5.2",
+  "_inBundle": false,
+  "_integrity": "sha512-McXU+rztJO0hov23EDs8J5trbqJGta5XCjG6fc74XE8XcqZF/FkZ0P71KW4tWjxTF389NjSTnalrNH5aqwY5Gw==",
+  "_location": "/tui-image-editor",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "tui-image-editor@3.5.2",
+    "name": "tui-image-editor",
+    "escapedName": "tui-image-editor",
+    "rawSpec": "3.5.2",
+    "saveSpec": null,
+    "fetchSpec": "3.5.2"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/tui-image-editor/-/tui-image-editor-3.5.2.tgz",
+  "_spec": "3.5.2",
+  "_where": "F:\\Mywork code\\9man-web-pc",
+  "author": {
+    "name": "NHNEnt FE Development Lab",
+    "email": "dl_javascript@nhnent.com"
+  },
+  "bugs": {
+    "url": "https://github.com/nhnent/tui.image-editor/issues"
+  },
+  "dependencies": {
+    "core-js": "2.4.1",
+    "tui-code-snippet": "^1.5.0",
+    "tui-color-picker": "^2.2.0"
+  },
+  "description": "TOAST UI Component: ImageEditor",
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-eslint": "^7.1.0",
+    "babel-loader": "^6.2.7",
+    "babel-preset-es2015": "^6.18.0",
+    "css-loader": "^0.28.11",
+    "dtslint": "^0.4.2",
+    "es5-shim": "^4.5.9",
+    "eslint": "^4.5.0",
+    "eslint-config-tui": "^1.0.1",
+    "eslint-loader": "^1.6.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-saver": "^1.3.3",
+    "istanbul-instrumenter-loader": "^1.0.0",
+    "jasmine-core": "^2.4.1",
+    "jasmine-jquery": "^2.1.0",
+    "jquery": "^3.2.1",
+    "jsdoc": "^3.5.4",
+    "karma": "^1.3.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-coverage": "^1.1.1",
+    "karma-es5-shim": "0.0.4",
+    "karma-firefox-launcher": "^1.1.0",
+    "karma-jasmine": "^1.0.2",
+    "karma-jquery": "^0.2.2",
+    "karma-junit-reporter": "^1.2.0",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webdriver-launcher": "git+https://github.com/nhnent/karma-webdriver-launcher.git#v1.1.0",
+    "karma-webpack": "^1.8.0",
+    "mkdirp": "^0.5.1",
+    "safe-umd-webpack-plugin": "0.0.2",
+    "simulant": "^0.2.2",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "svgstore": "^2.0.3",
+    "tslint": "^5.12.0",
+    "tui-jsdoc-template": "^1.0.4",
+    "typescript": "^3.2.2",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.11.0"
+  },
+  "homepage": "https://github.com/nhnent/tui.image-editor#readme",
+  "keywords": [
+    "nhnent",
+    "tui",
+    "component",
+    "image",
+    "editor",
+    "canvas",
+    "fabric"
+  ],
+  "license": "MIT",
+  "main": "dist/tui-image-editor.js",
+  "name": "tui-image-editor",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nhnent/tui.image-editor.git"
+  },
+  "scripts": {
+    "bundle": "webpack && webpack -p && npm run bundle:svg && node tsBannerGenerator.js",
+    "bundle:svg": "node makesvg.js",
+    "cpy-dist2doc": "mkdir -p doc/dist && cp -f -r dist doc",
+    "doc": "jsdoc -c jsdoc.conf.json && npm run cpy-dist2doc",
+    "postinstall": "npm install --no-save --no-optional fabric@^1.6.7",
+    "serve": "webpack-dev-server --inline --hot -d",
+    "test": "karma start --no-single-run",
+    "test:ne": "KARMA_SERVER=ne karma start",
+    "test:types": "tsc --project test/types",
+    "tslint": "tslint index.d.ts"
+  },
+  "version": "3.5.2"
+}
